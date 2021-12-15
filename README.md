@@ -7,7 +7,7 @@
 > Konsumenci tworzą pieroga, pod warunkiem, że w buforach są w jednym czasie dostępne ciasto i nadzienie.
 > Liczba procesów/wątków producentów i konsumentów powinna być parametrem programu.
 
-Program trzeba skompilować z flagami -lpthread i -lrt
+Program trzeba skompilować z flagami `-lpthread` i `-lrt`
 ```sh
 gcc main.c -lpthread -lrt
 ```

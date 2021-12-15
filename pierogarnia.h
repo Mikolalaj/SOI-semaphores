@@ -12,8 +12,6 @@ struct Pierogarnia {
     Buffer mieso;
     Buffer kapusta;
     Buffer ser;
-
-    pthread_mutex_t mutex;
 };
 
 void init_pierogarnia(Pierogarnia *pierogarnia) {
@@ -30,7 +28,6 @@ void init_pierogarnia(Pierogarnia *pierogarnia) {
 }
 
 void destroy_pierogarnia(Pierogarnia *pierogarnia) {
-    pthread_mutex_destroy(&pierogarnia->mutex);
     destroy_buffor(&pierogarnia->ciasto);
     destroy_buffor(&pierogarnia->mieso);
     destroy_buffor(&pierogarnia->kapusta);
